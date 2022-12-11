@@ -24,3 +24,18 @@ const outputArea = document.getElementById('output-area')
 const button = document.getElementById('generate-button')
 const reset = document.getElementById('reset-button')
 
+button.addEventListener('click', function(){
+    const numberQuantity = outputQuantity.value
+    const numberMin = outputMin.value
+    const numberMax = outputMax.value
+    console.log(numberQuantity, numberMin, numberMax)
+
+    if (numberQuantity === '' || numberMin === '' || numberMax === ''){
+        alert('Inserisci tutti i valori')
+    } else if (numberMin > numberMax){
+        alert('Il minimo non può essere più grande del massimo')
+
+    } else {
+        
+    }
+});
